@@ -1,0 +1,82 @@
+/*GENERAL*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*UTILITY*/
+
+
+
+/*HEADER*/
+/*MAIN*/
+.container{
+  background-color: black;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+  position: relative;
+}
+
+.user-box{
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  flex-wrap: wrap;
+  padding: 10px;
+
+}
+
+.tag{
+  background-color: rgba(135, 135, 135, 0.5);
+  color: white;
+  position: absolute;
+  flex-wrap: wrap;
+  bottom: 5px;
+}
+
+main img{
+  width: 200px;
+  height: 200px;
+
+}
+
+
+/*FOOTER*/
+.options{
+  height: 80px;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cam{
+  display: flex;
+  flex-direction: column;
+}
+
+footer i{
+  display: flex;
+  align-items: flex-start;
+}
+
+footer span{
+
+}
+
+.end-meeting{
+  background-color: gray;
+  height: 100%;
+  width: auto;
+  color: red;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}

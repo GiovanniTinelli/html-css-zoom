@@ -12,63 +12,81 @@
 
 /*HEADER*/
 /*MAIN*/
-.container{
-  background-color: black;
-  height: calc(100vh - 80px);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  overflow: auto;
-  position: relative;
+
+main{
+background-color: black;
+display: flex;
+justify-content: center;
+align-content: flex-start;
+flex-wrap: wrap;
+height: calc(100vh - 80px);
+overflow-y: auto;
+padding: 20px 0;
 }
+
 
 .user-box{
-  background-color: black;
-  width: 200px;
+  position: relative;
+  background-color: rgb(117, 21, 21);
+  width: 300px;
   height: 200px;
-  flex-wrap: wrap;
-  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 5px;
+  
 
 }
 
-.tag{
+.user-box span{
   background-color: rgba(135, 135, 135, 0.5);
   color: white;
   position: absolute;
-  flex-wrap: wrap;
+  bottom: 0;
+  left: 0;
   bottom: 5px;
+  padding: 5px;
 }
 
+
 main img{
-  width: 200px;
+  width: 300px;
   height: 200px;
+  object-fit: cover;
 
 }
 
 
 /*FOOTER*/
-.options{
-  height: 80px;
-  background-color: rgb(42, 42, 42);
-  color: white;
-  width: 100vw;
-  display: flex;
+
+footer{
+  display:flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  
+}
+.options,.group{
+  display: flex;
 }
 
-.cam{
+
+footer .icon , .group{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
 }
 
-footer i{
-  display: flex;
-  align-items: flex-start;
+footer .icon i{
+margin-bottom: px;
 }
 
-footer span{
-
+.group{
+  flex-direction: row;
 }
 
 .end-meeting{
@@ -79,4 +97,5 @@ footer span{
   display: flex;
   align-items: center;
   padding: 0 10px;
+  cursor: pointer;
 }
